@@ -1,0 +1,96 @@
+{
+  "source": {
+    "productUrl": "https://open.heepay.com/www/index.html#/product/detail?type=15&id=10002",
+    "productId": 10002,
+    "productName": "快捷支付",
+    "retrievedAt": "2026-05-06",
+    "retrievalHost": "test G reachable; old test A may receive 403"
+  },
+  "menus": [
+    {
+      "menuId": 1501,
+      "name": "产品介绍",
+      "menuType": 0
+    },
+    {
+      "menuId": 1502,
+      "name": "接入指引",
+      "menuType": 0
+    },
+    {
+      "menuId": 1503,
+      "name": "API列表",
+      "menuType": 1
+    },
+    {
+      "menuId": 1505,
+      "name": "商户通知",
+      "menuType": 0
+    },
+    {
+      "menuId": 1504,
+      "name": "常见问题",
+      "menuType": 0
+    }
+  ],
+  "methods": [
+    {
+      "menuId": 1021017006,
+      "name": "快捷签约-申请签约下单",
+      "method": "pay.heepay.quick.sign.apply",
+      "requestEncrypted": true,
+      "notes": "Creates a quick-pay signing/bind request."
+    },
+    {
+      "menuId": 1021017011,
+      "name": "快捷签约-签约结果查询",
+      "method": "pay.heepay.quick.sign.query",
+      "requestEncrypted": false,
+      "notes": "Queries signing result by merchant order number."
+    },
+    {
+      "menuId": 1021017010,
+      "name": "快捷签约-申请解约",
+      "method": "pay.heepay.quick.sign.close",
+      "requestEncrypted": true,
+      "notes": "Closes an existing signing authorization."
+    },
+    {
+      "menuId": 1021017007,
+      "name": "快捷支付-申请支付下单",
+      "method": "pay.heepay.quick.apply",
+      "requestEncrypted": true,
+      "notes": "Creates a quick-pay payment order."
+    },
+    {
+      "menuId": 1021017008,
+      "name": "快捷支付-确认支付",
+      "method": "pay.heepay.quick.confirm",
+      "requestEncrypted": true,
+      "notes": "Confirms a payment using provider token/SMS flow."
+    },
+    {
+      "menuId": 1021017005,
+      "name": "快捷支付-短验重发",
+      "method": "pay.heepay.quick.sms.resend",
+      "requestEncrypted": true,
+      "notes": "Resends payment SMS verification."
+    },
+    {
+      "menuId": 1021017009,
+      "name": "快捷支付-直接支付",
+      "method": "pay.heepay.quick.submit",
+      "requestEncrypted": true,
+      "notes": "Submits direct quick payment."
+    }
+  ],
+  "morepaySmokeBaseline": {
+    "date": "2026-05-06",
+    "method": "pay.heepay.quick.sign.apply",
+    "providerCode": 10000,
+    "providerMsg": "调用成功",
+    "latencyMsApprox": 759,
+    "remainingCaveat": "response-signature verification rule still needs final provider-doc alignment"
+  }
+}
+
